@@ -14,7 +14,7 @@ export default function TabLayout() {
         sceneStyle: {
           paddingBottom: insets.bottom,
           paddingTop: insets.top,
-        }
+        },
       }}>
       <Tabs.Screen
         name="index"
@@ -28,6 +28,13 @@ export default function TabLayout() {
         options={{
           title: 'Recipes',
           tabBarIcon: ({ color }) => <MaterialCommunityIcons name="chef-hat" size={24} color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="ingredients"
+        options={{
+          title: 'Ingredients',
+          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="silverware" size={24} color={color} />,
         }}
       />
     </Tabs>

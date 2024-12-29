@@ -8,7 +8,7 @@ import { StatusBar } from 'expo-status-bar';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
-
+// https://colorhunt.co/palette/c30e59e82561f2ae66e8e7ab
 export default function RootLayout() {
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
