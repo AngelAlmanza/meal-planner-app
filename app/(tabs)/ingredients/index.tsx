@@ -1,6 +1,7 @@
 import { IngredientCard } from "@/components/IngredientCard";
 import { IIngredient } from "@/interfaces/Recipes";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { router } from "expo-router";
 import { FlatList, Pressable, StyleSheet, Text, View } from "react-native";
 
 const ingredients: IIngredient[] = [
@@ -14,7 +15,7 @@ const ingredients: IIngredient[] = [
 
 export default function Ingredients() {
   const handleAdd = () => {
-    console.log('Add ingredient')
+    router.push('/ingredients/form')
   }
 
   return (
